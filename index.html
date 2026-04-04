@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pallasite Productions</title>
+  <meta name="description" content="Pallasite Productions ñ Production & Design Company" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --fg: #ffffff;
+      --muted: #9aa0a6;
+      --accent: #8b5cf6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(139,92,246,0.15), transparent), var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAV */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11,11,15,0.75);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+    }
+
+    .logo img {
+      height: 36px;
+      width: auto;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--fg);
+    }
+
+    .lang-btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.25);
+      font-size: 13px;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 20px;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 86px);
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #6366f1);
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ANIMATION */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: 0.8s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <img src="logo.png" alt="Pallasite Productions Logo">
+      <span>PALLASITE PRODUCTIONS</span>
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="/ar" class="lang-btn">«·⁄—»Ì…</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="fade-up">
+    <h1>Production & Design<br>Forged Like a Meteor</h1>
+    <p>
+      Pallasite Productions is a creative production and design studio delivering
+      cinematic visuals, branding, and digital experiences for bold ideas.
+    </p>
+    <a href="#contact" class="btn">Start a Project</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title fade-up">Services</h2>
+  <div class="grid">
+    <div class="card fade-up">
+      <h3>Video Production</h3>
+      <p>Commercials, documentaries, social content, and cinematic storytelling.</p>
+    </div>
+    <div class="card fade-up">
+      <h3>Creative Direction</h3>
+      <p>Concept development, visual language, and brand identity systems.</p>
+    </div>
+    <div class="card fade-up">
+      <h3>Design & Motion</h3>
+      <p>Graphic design, motion graphics, and digital-first visuals.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="section-title fade-up">Selected Work</h2>
+  <div class="grid">
+    <div class="card fade-up">
+      <h3>Project One</h3>
+      <p>High-end visual production.</p>
+    </div>
+    <div class="card fade-up">
+      <h3>Project Two</h3>
+      <p>Brand and motion system.</p>
+    </div>
+    <div class="card fade-up">
+      <h3>Project Three</h3>
+      <p>Creative direction & design.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title fade-up">About</h2>
+  <p class="fade-up" style="max-width:700px;color:var(--muted)">
+    Inspired by rare pallasite meteorites, our studio blends raw creativity with
+    refined execution. We collaborate closely with clients to transform ideas into
+    striking visual realities.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title fade-up">Contact</h2>
+  <p class="fade-up" style="margin-bottom:24px;color:var(--muted)">
+    Tell us about your project.
+  </p>
+  <a class="btn fade-up" href="mailto:hello@pallasiteproductions.com">
+    hello@pallasiteproductions.com
+  </a>
+</section>
+
+<footer>
+  © <span id="year"></span> Pallasite Productions. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
