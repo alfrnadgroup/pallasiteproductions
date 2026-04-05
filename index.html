@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pallasite Productions</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }
   </style>
@@ -18,20 +15,11 @@
 <!-- HEADER -->
 <header class="bg-gray-900 text-white">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <!-- Logo + Title + Toggle -->
     <div class="flex items-center gap-4">
       <img src="logo.png" alt="Logo" class="h-20 w-20">
-
       <div>
-        <h1 id="title" class="text-2xl font-bold">
-          Pallasite Productions
-        </h1>
-
-        <button id="lang-toggle"
-          class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-semibold hover:bg-gray-200">
-          AR
-        </button>
+        <h1 id="title" class="text-2xl font-bold">Pallasite Productions</h1>
+        <button id="lang-toggle" class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-semibold hover:bg-gray-200">AR</button>
       </div>
     </div>
 
@@ -42,75 +30,49 @@
       <a id="nav-about" href="#about">About</a>
       <a id="nav-contact" href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
-<!-- HERO -->
-<section id="home"
-  class="h-[90vh] flex items-center justify-center text-center text-white"
-  style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba'); background-size:cover; background-position:center;">
+<!-- HERO with Video -->
+<section id="home" class="h-[90vh] relative flex items-center justify-center text-center text-white overflow-hidden">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+    <source src="promo.mp4" type="video/mp4">
+  </video>
 
-  <div class="bg-black/70 w-full h-full flex items-center justify-center px-6">
-    <div>
-      <h2 id="hero-title" class="text-5xl font-black mb-4">
-        Production & Design Forged Like a Meteor
-      </h2>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
 
-      <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6">
-        We craft cinematic visuals, branding, and digital experiences.
-      </p>
-
-      <a id="hero-btn"
-         href="#contact"
-         class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-        Start a Project
-      </a>
-    </div>
+  <!-- Content -->
+  <div class="relative z-10 px-6">
+    <h2 id="hero-title" class="text-5xl font-black mb-4">Production & Design Forged Like a Meteor</h2>
+    <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6">We craft cinematic visuals, branding, and digital experiences.</p>
+    <a id="hero-btn" href="#contact" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Start a Project</a>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="py-20 bg-gray-100 text-center">
-  <h3 id="services-title" class="text-3xl font-bold mb-10">
-    Our Services
-  </h3>
-
+  <h3 id="services-title" class="text-3xl font-bold mb-10">Our Services</h3>
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
     <div class="bg-white p-6 rounded-xl shadow">
-      <h4 id="service1-title" class="text-xl font-semibold mb-2">
-        Video Production
-      </h4>
-      <p id="service1-text">
-        Commercials, films, and digital storytelling.
-      </p>
+      <h4 id="service1-title" class="text-xl font-semibold mb-2">Video Production</h4>
+      <p id="service1-text">Commercials, films, and digital storytelling.</p>
     </div>
-
     <div class="bg-white p-6 rounded-xl shadow">
-      <h4 id="service2-title" class="text-xl font-semibold mb-2">
-        Creative Direction
-      </h4>
-      <p id="service2-text">
-        Concepts, branding, and visual identity.
-      </p>
+      <h4 id="service2-title" class="text-xl font-semibold mb-2">Creative Direction</h4>
+      <p id="service2-text">Concepts, branding, and visual identity.</p>
     </div>
-
     <div class="bg-white p-6 rounded-xl shadow">
-      <h4 id="service3-title" class="text-xl font-semibold mb-2">
-        Design & Motion
-      </h4>
-      <p id="service3-text">
-        Graphic and motion design.
-      </p>
+      <h4 id="service3-title" class="text-xl font-semibold mb-2">Design & Motion</h4>
+      <p id="service3-text">Graphic and motion design.</p>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="py-20 text-center">
-  <h3 id="about-title" class="text-3xl font-bold mb-4">
-    About Us
-  </h3>
+  <h3 id="about-title" class="text-3xl font-bold mb-4">About Us</h3>
   <p id="about-text" class="max-w-3xl mx-auto text-gray-600">
     Inspired by rare pallasite meteorites, we merge creativity with precision.
   </p>
@@ -118,104 +80,99 @@
 
 <!-- CONTACT -->
 <section id="contact" class="bg-gray-900 text-white py-20 text-center">
-  <h3 id="contact-title" class="text-3xl font-bold mb-6">
-    Contact Us
-  </h3>
-
-  <a href="mailto:hello@pallasiteproductions.com" class="underline">
-    hello@pallasiteproductions.com
-  </a>
+  <h3 id="contact-title" class="text-3xl font-bold mb-6">Contact Us</h3>
+  <a href="mailto:hello@pallasiteproductions.com" class="underline">hello@pallasiteproductions.com</a>
 </section>
 
 <!-- FOOTER -->
 <footer class="bg-gray-800 text-gray-400 text-center py-6">
-  <p id="footer-text">
-    © 2026 Pallasite Productions. All rights reserved.
-  </p>
+  <p id="footer-text">© 2026 Pallasite Productions. All rights reserved.</p>
 </footer>
 
 <!-- LANGUAGE SCRIPT -->
 <script>
-const translations = {
-  en: {
-    title: "Pallasite Productions",
-    navHome: "Home",
-    navServices: "Services",
-    navAbout: "About",
-    navContact: "Contact",
-    heroTitle: "Production & Design Forged Like a Meteor",
-    heroText: "We craft cinematic visuals, branding, and digital experiences.",
-    heroBtn: "Start a Project",
-    servicesTitle: "Our Services",
-    s1Title: "Video Production",
-    s1Text: "Commercials, films, and digital storytelling.",
-    s2Title: "Creative Direction",
-    s2Text: "Concepts, branding, and visual identity.",
-    s3Title: "Design & Motion",
-    s3Text: "Graphic and motion design.",
-    aboutTitle: "About Us",
-    aboutText: "Inspired by rare pallasite meteorites, we merge creativity with precision.",
-    contactTitle: "Contact Us",
-    footer: "© 2026 Pallasite Productions. All rights reserved."
-  },
-  ar: {
-    title: "ÈÇáÇÓÇíÊ ááÅäÊÇÌ",
-    navHome: "ÇáÑÆíÓíÉ",
-    navServices: "ÎÏãÇÊäÇ",
-    navAbout: "ãä äÍä",
-    navContact: "ÊæÇÕá ãÚäÇ",
-    heroTitle: "ÅäÊÇÌ æÊÕãíã ãÕÞæá ßäíÒß",
-    heroText: "äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí æÊÌÇÑÈ ÑÞãíÉ.",
-    heroBtn: "ÇÈÏÃ ãÔÑæÚß",
-    servicesTitle: "ÎÏãÇÊäÇ",
-    s1Title: "ÇáÅäÊÇÌ ÇáãÑÆí",
-    s1Text: "ÅÚáÇäÇÊ æÃÝáÇã æÓÑÏ ÈÕÑí.",
-    s2Title: "ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí",
-    s2Text: "ãÝÇåíã æåæíÉ ÈÕÑíÉ.",
-    s3Title: "ÇáÊÕãíã æÇáãæÔä",
-    s3Text: "ÊÕãíã ÌÑÇÝíßí æãæÔä.",
-    aboutTitle: "ãä äÍä",
-    aboutText: "ãÓÊæÍæä ãä äííÇÒß ÈÇáÇÓÇíÊ¡ äãÒÌ ÇáÅÈÏÇÚ ãÚ ÇáÏÞÉ.",
-    contactTitle: "ÊæÇÕá ãÚäÇ",
-    footer: "© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ."
+document.addEventListener("DOMContentLoaded", () => {
+  const translations = {
+    en: {
+      title: "Pallasite Productions",
+      navHome: "Home",
+      navServices: "Services",
+      navAbout: "About",
+      navContact: "Contact",
+      heroTitle: "Production & Design Forged Like a Meteor",
+      heroText: "We craft cinematic visuals, branding, and digital experiences.",
+      heroBtn: "Start a Project",
+      servicesTitle: "Our Services",
+      s1Title: "Video Production",
+      s1Text: "Commercials, films, and digital storytelling.",
+      s2Title: "Creative Direction",
+      s2Text: "Concepts, branding, and visual identity.",
+      s3Title: "Design & Motion",
+      s3Text: "Graphic and motion design.",
+      aboutTitle: "About Us",
+      aboutText: "Inspired by rare pallasite meteorites, we merge creativity with precision.",
+      contactTitle: "Contact Us",
+      footer: "© 2026 Pallasite Productions. All rights reserved."
+    },
+    ar: {
+      title: "ÈÇáÇÓÇíÊ ááÅäÊÇÌ",
+      navHome: "ÇáÑÆíÓíÉ",
+      navServices: "ÎÏãÇÊäÇ",
+      navAbout: "ãä äÍä",
+      navContact: "ÊæÇÕá ãÚäÇ",
+      heroTitle: "ÅäÊÇÌ æÊÕãíã ÈÕÑí ÈÃÓáæÈ ÓíäãÇÆí",
+      heroText: "äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí æÊÌÇÑÈ ÑÞãíÉ.",
+      heroBtn: "ÇÈÏÃ ãÔÑæÚß",
+      servicesTitle: "ÎÏãÇÊäÇ",
+      s1Title: "ÅäÊÇÌ ÇáÝíÏíæ",
+      s1Text: "ÅÚáÇäÇÊ¡ ÃÝáÇã æÓÑÏ ÈÕÑí.",
+      s2Title: "ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí",
+      s2Text: "ãÝÇåíã æåæíÉ ÈÕÑíÉ.",
+      s3Title: "ÇáÊÕãíã æÇáãæÔä",
+      s3Text: "ÊÕãíã ÌÑÇÝíßí æãæÔä.",
+      aboutTitle: "ãä äÍä",
+      aboutText: "ãÓÊæÍæ ãä äíÇÒß ÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ ÇáÅÈÏÇÚ ãÚ ÇáÏÞÉ.",
+      contactTitle: "ÊæÇÕá ãÚäÇ",
+      footer: "© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ."
+    }
+  };
+
+  let lang = "en";
+
+  function applyLang(l) {
+    lang = l;
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+
+    document.getElementById("title").textContent = translations[l].title;
+    document.getElementById("nav-home").textContent = translations[l].navHome;
+    document.getElementById("nav-services").textContent = translations[l].navServices;
+    document.getElementById("nav-about").textContent = translations[l].navAbout;
+    document.getElementById("nav-contact").textContent = translations[l].navContact;
+    document.getElementById("hero-title").textContent = translations[l].heroTitle;
+    document.getElementById("hero-text").textContent = translations[l].heroText;
+    document.getElementById("hero-btn").textContent = translations[l].heroBtn;
+    document.getElementById("services-title").textContent = translations[l].servicesTitle;
+    document.getElementById("service1-title").textContent = translations[l].s1Title;
+    document.getElementById("service1-text").textContent = translations[l].s1Text;
+    document.getElementById("service2-title").textContent = translations[l].s2Title;
+    document.getElementById("service2-text").textContent = translations[l].s2Text;
+    document.getElementById("service3-title").textContent = translations[l].s3Title;
+    document.getElementById("service3-text").textContent = translations[l].s3Text;
+    document.getElementById("about-title").textContent = translations[l].aboutTitle;
+    document.getElementById("about-text").textContent = translations[l].aboutText;
+    document.getElementById("contact-title").textContent = translations[l].contactTitle;
+    document.getElementById("footer-text").textContent = translations[l].footer;
+
+    document.getElementById("lang-toggle").textContent = l === "en" ? "AR" : "EN";
   }
-};
 
-let lang = "en";
+  document.getElementById("lang-toggle").onclick = () => {
+    applyLang(lang === "en" ? "ar" : "en");
+  };
 
-function applyLang(l) {
-  lang = l;
-  document.documentElement.lang = l;
-  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
-
-  document.getElementById("title").textContent = translations[l].title;
-  document.getElementById("nav-home").textContent = translations[l].navHome;
-  document.getElementById("nav-services").textContent = translations[l].navServices;
-  document.getElementById("nav-about").textContent = translations[l].navAbout;
-  document.getElementById("nav-contact").textContent = translations[l].navContact;
-  document.getElementById("hero-title").textContent = translations[l].heroTitle;
-  document.getElementById("hero-text").textContent = translations[l].heroText;
-  document.getElementById("hero-btn").textContent = translations[l].heroBtn;
-  document.getElementById("services-title").textContent = translations[l].servicesTitle;
-  document.getElementById("service1-title").textContent = translations[l].s1Title;
-  document.getElementById("service1-text").textContent = translations[l].s1Text;
-  document.getElementById("service2-title").textContent = translations[l].s2Title;
-  document.getElementById("service2-text").textContent = translations[l].s2Text;
-  document.getElementById("service3-title").textContent = translations[l].s3Title;
-  document.getElementById("service3-text").textContent = translations[l].s3Text;
-  document.getElementById("about-title").textContent = translations[l].aboutTitle;
-  document.getElementById("about-text").textContent = translations[l].aboutText;
-  document.getElementById("contact-title").textContent = translations[l].contactTitle;
-  document.getElementById("footer-text").textContent = translations[l].footer;
-
-  document.getElementById("lang-toggle").textContent = l === "en" ? "AR" : "EN";
-}
-
-document.getElementById("lang-toggle").onclick = () => {
-  applyLang(lang === "en" ? "ar" : "en");
-};
-
-applyLang("en");
+  applyLang("en");
+});
 </script>
 
 </body>
