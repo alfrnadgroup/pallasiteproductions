@@ -1,162 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <!-- FORCE UTF-8 FIRST -->
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pallasite Productions</title>
-
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Arabic-safe font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: Inter, Cairo, sans-serif; }
-  </style>
 </head>
 
-<body class="bg-white text-gray-900 transition-all duration-300">
+<body class="font-sans bg-white text-gray-900 transition-all duration-300">
 
-<!-- HEADER -->
+<!-- Header -->
 <header class="bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 
     <!-- Logo + Title + Toggle -->
-    <div class="flex items-center gap-4">
-      <img src="logo.png" class="h-20 w-20" alt="Logo">
+    <div class="flex flex-col items-start">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Pallasite Logo" class="h-32 w-32" />
+        <div class="flex flex-col">
+          <h1 class="text-2xl font-bold mb-1"
+              data-en="Pallasite Productions"
+              data-ar="ÈÇáÇÓÇíÊ ááÅäÊÇÌ">
+            Pallasite Productions
+          </h1>
 
-      <div>
-        <h1 class="text-2xl font-bold"
-            data-en="Pallasite Productions"
-            data-ar="ÈÇáÇÓÇíÊ ááÅäÊÇÌ">
-          Pallasite Productions
-        </h1>
-
-        <button id="lang-toggle"
-          class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-semibold hover:bg-gray-200">
-          <span id="lang-label">AR</span>
-        </button>
+          <!-- SAME TOGGLE AS ALFULKA -->
+          <button id="lang-toggle"
+            class="bg-white text-gray-900 px-3 py-1 rounded text-sm font-medium hover:bg-gray-200 flex items-center space-x-2 w-max">
+            <span class="lang-en font-semibold">EN</span>
+            <span>/</span>
+            <span class="lang-ar text-gray-500">ÚÑÈí</span>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- NAV -->
-    <nav class="hidden md:flex gap-6 text-sm">
+    <!-- Navigation -->
+    <nav class="space-x-6 hidden md:flex items-center">
       <a href="#home" data-en="Home" data-ar="ÇáÑÆíÓíÉ">Home</a>
-      <a href="#services" data-en="Services" data-ar="ÎÏãÇÊäÇ">Services</a>
       <a href="#about" data-en="About" data-ar="ãä äÍä">About</a>
+      <a href="#services" data-en="Services" data-ar="ÎÏãÇÊäÇ">Services</a>
       <a href="#contact" data-en="Contact" data-ar="ÊæÇÕá ãÚäÇ">Contact</a>
     </nav>
-
   </div>
 </header>
 
-<!-- HERO -->
+<!-- Hero -->
 <section id="home"
-  class="h-[90vh] flex items-center justify-center text-center text-white"
-  style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba'); background-size:cover; background-position:center;">
-
-  <div class="bg-black/70 w-full h-full flex items-center justify-center px-6">
+  class="bg-[url('https://images.unsplash.com/photo-1519681393784-d120267933ba')] bg-cover bg-center h-[90vh] flex items-center">
+  <div class="bg-black bg-opacity-60 w-full h-full flex items-center justify-center text-center text-white px-6">
     <div>
-      <h2 class="text-5xl font-black mb-4"
+      <h2 class="text-5xl font-bold mb-4"
           data-en="Production & Design Forged Like a Meteor"
           data-ar="ÅäÊÇÌ æÊÕãíã ãÕÞæá ßäíÒß">
         Production & Design Forged Like a Meteor
       </h2>
 
-      <p class="text-xl max-w-2xl mx-auto mb-6"
-         data-en="We craft cinematic visuals, branding, and digital experiences."
-         data-ar="äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí¡ æåæíÇÊ¡ æÊÌÇÑÈ ÑÞãíÉ.">
-        We craft cinematic visuals, branding, and digital experiences.
-      </p>
-
-      <a href="#contact"
-         class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200"
-         data-en="Start a Project"
-         data-ar="ÇÈÏÃ ãÔÑæÚß">
-        Start a Project
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="py-20 bg-gray-100 text-center">
-  <h3 class="text-3xl font-bold mb-10"
-      data-en="Our Services"
-      data-ar="ÎÏãÇÊäÇ">
-    Our Services
-  </h3>
-
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h4 class="text-xl font-semibold mb-2"
-          data-en="Video Production"
-          data-ar="ÇáÅäÊÇÌ ÇáãÑÆí">
-        Video Production
-      </h4>
-      <p data-en="Commercials, films, and digital storytelling."
-         data-ar="ÅÚáÇäÇÊ¡ ÃÝáÇã¡ æÓÑÏ ÈÕÑí ÑÞãí.">
-        Commercials, films, and digital storytelling.
-      </p>
-    </div>
-
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h4 class="text-xl font-semibold mb-2"
-          data-en="Creative Direction"
-          data-ar="ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí">
-        Creative Direction
-      </h4>
-      <p data-en="Concepts, branding, and visual identity."
-         data-ar="ãÝÇåíã¡ ÚáÇãÇÊ ÊÌÇÑíÉ¡ æåæíÉ ÈÕÑíÉ.">
-        Concepts, branding, and visual identity.
-      </p>
-    </div>
-
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h4 class="text-xl font-semibold mb-2"
-          data-en="Design & Motion"
-          data-ar="ÇáÊÕãíã æÇáãæÔä">
-        Design & Motion
-      </h4>
-      <p data-en="Graphic and motion design."
-         data-ar="ÊÕãíã ÌÑÇÝíß æãæÔä.">
-        Graphic and motion design.
+      <p class="text-xl mb-6"
+         data-en="Cinematic visuals, branding, and digital experiences."
+         data-ar="ãÍÊæì ÈÕÑí ÓíäãÇÆí¡ æåæíÉ¡ æÊÌÇÑÈ ÑÞãíÉ.">
+        Cinematic visuals, branding, and digital experiences.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="py-20 text-center">
-  <h3 class="text-3xl font-bold mb-4"
-      data-en="About Us"
-      data-ar="ãä äÍä">
-    About Us
-  </h3>
-  <p class="max-w-3xl mx-auto text-gray-600"
-     data-en="Inspired by rare pallasite meteorites, we merge creativity with precision."
-     data-ar="ãÓÊæÍæä ãä äíÇÒß ÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ ÇáÅÈÏÇÚ ãÚ ÇáÏÞÉ.">
-    Inspired by rare pallasite meteorites, we merge creativity with precision.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="bg-gray-900 text-white py-20 text-center">
-  <h3 class="text-3xl font-bold mb-6"
-      data-en="Contact Us"
-      data-ar="ÊæÇÕá ãÚäÇ">
-    Contact Us
-  </h3>
-
-  <a href="mailto:hello@pallasiteproductions.com" class="underline">
-    hello@pallasiteproductions.com
-  </a>
-</section>
-
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="bg-gray-800 text-gray-400 text-center py-6">
   <p data-en="© 2026 Pallasite Productions. All rights reserved."
      data-ar="© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ.">
@@ -164,27 +73,32 @@
   </p>
 </footer>
 
-<!-- LANGUAGE SCRIPT (BULLETPROOF) -->
+<!-- LANGUAGE SCRIPT (UNCHANGED FROM ALFULKA) -->
 <script>
-  let lang = "en";
-  const label = document.getElementById("lang-label");
+  const toggle = document.getElementById('lang-toggle');
+  let currentLang = 'en';
 
-  function setLanguage(l) {
-    lang = l;
+  function updateLanguage(lang) {
     document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-    label.textContent = lang === "en" ? "AR" : "EN";
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.textContent = el.getAttribute("data-" + lang);
+    document.querySelector('.lang-en').classList.toggle('font-semibold', lang === 'en');
+    document.querySelector('.lang-en').classList.toggle('text-gray-500', lang !== 'en');
+    document.querySelector('.lang-ar').classList.toggle('font-semibold', lang === 'ar');
+    document.querySelector('.lang-ar').classList.toggle('text-gray-500', lang !== 'ar');
+
+    document.querySelectorAll('[data-en]').forEach(el => {
+      const text = el.getAttribute(`data-${lang}`);
+      if (text !== null) el.textContent = text;
     });
   }
 
-  document.getElementById("lang-toggle").onclick = () => {
-    setLanguage(lang === "en" ? "ar" : "en");
-  };
+  toggle.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'ar' : 'en';
+    updateLanguage(currentLang);
+  });
 
-  setLanguage("en");
+  updateLanguage(currentLang);
 </script>
 
 </body>
