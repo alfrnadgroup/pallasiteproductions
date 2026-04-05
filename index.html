@@ -45,15 +45,9 @@
 
   <!-- Content -->
   <div class="relative z-10 px-6">
-    <h2 id="hero-title" class="text-5xl font-black mb-4">
-      Production & Design Forged Like a Meteor
-    </h2>
-    <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6">
-      We craft cinematic visuals, branding, and digital experiences.
-    </p>
-    <a id="hero-btn" href="#contact" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-      Start a Project
-    </a>
+    <h2 id="hero-title" class="text-5xl font-black mb-4">Production & Design Forged Like a Meteor</h2>
+    <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6">We craft cinematic visuals, branding, and digital experiences.</p>
+    <a id="hero-btn" href="#contact" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Start a Project</a>
   </div>
 </section>
 
@@ -97,86 +91,88 @@
 
 <!-- LANGUAGE SCRIPT -->
 <script>
-const translations = {
-  en: {
-    title: "Pallasite Productions",
-    navHome: "Home",
-    navServices: "Services",
-    navAbout: "About",
-    navContact: "Contact",
-    heroTitle: "Production & Design Forged Like a Meteor",
-    heroText: "We craft cinematic visuals, branding, and digital experiences.",
-    heroBtn: "Start a Project",
-    servicesTitle: "Our Services",
-    s1Title: "Video Production",
-    s1Text: "Commercials, films, and digital storytelling.",
-    s2Title: "Creative Direction",
-    s2Text: "Concepts, branding, and visual identity.",
-    s3Title: "Design & Motion",
-    s3Text: "Graphic and motion design.",
-    aboutTitle: "About Us",
-    aboutText: "Inspired by rare pallasite meteorites, we merge creativity with precision.",
-    contactTitle: "Contact Us",
-    footer: "© 2026 Pallasite Productions. All rights reserved."
-  },
-  ar: {
-    title: "ÈÇáÇÓÇíÊ ááÅäÊÇÌ",
-    navHome: "ÇáÑÆíÓíÉ",
-    navServices: "ÎÏãÇÊäÇ",
-    navAbout: "ãä äÍä",
-    navContact: "ÊæÇÕá ãÚäÇ",
-    heroTitle: "ÅäÊÇÌ æÊÕãíã ÈÕÑí ÈÃÓáæÈ ÓíäãÇÆí",
-    heroText: "äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí æÊÌÇÑÈ ÑÞãíÉ.",
-    heroBtn: "ÇÈÏÃ ãÔÑæÚß",
-    servicesTitle: "ÎÏãÇÊäÇ",
-    s1Title: "ÅäÊÇÌ ÇáÝíÏíæ",
-    s1Text: "ÅÚáÇäÇÊ¡ ÃÝáÇã æÓÑÏ ÈÕÑí.",
-    s2Title: "ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí",
-    s2Text: "ãÝÇåíã æåæíÉ ÈÕÑíÉ.",
-    s3Title: "ÇáÊÕãíã æÇáãæÔä",
-    s3Text: "ÊÕãíã ÌÑÇÝíßí æãæÔä.",
-    aboutTitle: "ãä äÍä",
-    aboutText: "ãÓÊæÍæ ãä äíÇÒß ÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ ÇáÅÈÏÇÚ ãÚ ÇáÏÞÉ.",
-    contactTitle: "ÊæÇÕá ãÚäÇ",
-    footer: "© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ."
+document.addEventListener("DOMContentLoaded", () => {
+  const translations = {
+    en: {
+      title: "Pallasite Productions",
+      navHome: "Home",
+      navServices: "Services",
+      navAbout: "About",
+      navContact: "Contact",
+      heroTitle: "Production & Design Forged Like a Meteor",
+      heroText: "We craft cinematic visuals, branding, and digital experiences.",
+      heroBtn: "Start a Project",
+      servicesTitle: "Our Services",
+      s1Title: "Video Production",
+      s1Text: "Commercials, films, and digital storytelling.",
+      s2Title: "Creative Direction",
+      s2Text: "Concepts, branding, and visual identity.",
+      s3Title: "Design & Motion",
+      s3Text: "Graphic and motion design.",
+      aboutTitle: "About Us",
+      aboutText: "Inspired by rare pallasite meteorites, we merge creativity with precision.",
+      contactTitle: "Contact Us",
+      footer: "© 2026 Pallasite Productions. All rights reserved."
+    },
+    ar: {
+      title: "ÈÇáÇÓÇíÊ ááÅäÊÇÌ",
+      navHome: "ÇáÑÆíÓíÉ",
+      navServices: "ÎÏãÇÊäÇ",
+      navAbout: "ãä äÍä",
+      navContact: "ÊæÇÕá ãÚäÇ",
+      heroTitle: "ÅäÊÇÌ æÊÕãíã ÈÕÑí ÈÃÓáæÈ ÓíäãÇÆí",
+      heroText: "äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí æÊÌÇÑÈ ÑÞãíÉ.",
+      heroBtn: "ÇÈÏÃ ãÔÑæÚß",
+      servicesTitle: "ÎÏãÇÊäÇ",
+      s1Title: "ÅäÊÇÌ ÇáÝíÏíæ",
+      s1Text: "ÅÚáÇäÇÊ¡ ÃÝáÇã æÓÑÏ ÈÕÑí.",
+      s2Title: "ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí",
+      s2Text: "ãÝÇåíã æåæíÉ ÈÕÑíÉ.",
+      s3Title: "ÇáÊÕãíã æÇáãæÔä",
+      s3Text: "ÊÕãíã ÌÑÇÝíßí æãæÔä.",
+      aboutTitle: "ãä äÍä",
+      aboutText: "ãÓÊæÍæ ãä äíÇÒß ÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ ÇáÅÈÏÇÚ ãÚ ÇáÏÞÉ.",
+      contactTitle: "ÊæÇÕá ãÚäÇ",
+      footer: "© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ."
+    }
+  };
+
+  let lang = "en";
+
+  function applyLang(l) {
+    lang = l;
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+
+    document.getElementById("title").textContent = translations[l].title;
+    document.getElementById("nav-home").textContent = translations[l].navHome;
+    document.getElementById("nav-services").textContent = translations[l].navServices;
+    document.getElementById("nav-about").textContent = translations[l].navAbout;
+    document.getElementById("nav-contact").textContent = translations[l].navContact;
+    document.getElementById("hero-title").textContent = translations[l].heroTitle;
+    document.getElementById("hero-text").textContent = translations[l].heroText;
+    document.getElementById("hero-btn").textContent = translations[l].heroBtn;
+    document.getElementById("services-title").textContent = translations[l].servicesTitle;
+    document.getElementById("service1-title").textContent = translations[l].s1Title;
+    document.getElementById("service1-text").textContent = translations[l].s1Text;
+    document.getElementById("service2-title").textContent = translations[l].s2Title;
+    document.getElementById("service2-text").textContent = translations[l].s2Text;
+    document.getElementById("service3-title").textContent = translations[l].s3Title;
+    document.getElementById("service3-text").textContent = translations[l].s3Text;
+    document.getElementById("about-title").textContent = translations[l].aboutTitle;
+    document.getElementById("about-text").textContent = translations[l].aboutText;
+    document.getElementById("contact-title").textContent = translations[l].contactTitle;
+    document.getElementById("footer-text").textContent = translations[l].footer;
+
+    document.getElementById("lang-toggle").textContent = l === "en" ? "AR" : "EN";
   }
-};
 
-let lang = "en";
+  document.getElementById("lang-toggle").onclick = () => {
+    applyLang(lang === "en" ? "ar" : "en");
+  };
 
-function applyLang(l) {
-  lang = l;
-  document.documentElement.lang = l;
-  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
-
-  document.getElementById("title").textContent = translations[l].title;
-  document.getElementById("nav-home").textContent = translations[l].navHome;
-  document.getElementById("nav-services").textContent = translations[l].navServices;
-  document.getElementById("nav-about").textContent = translations[l].navAbout;
-  document.getElementById("nav-contact").textContent = translations[l].navContact;
-  document.getElementById("hero-title").textContent = translations[l].heroTitle;
-  document.getElementById("hero-text").textContent = translations[l].heroText;
-  document.getElementById("hero-btn").textContent = translations[l].heroBtn;
-  document.getElementById("services-title").textContent = translations[l].servicesTitle;
-  document.getElementById("service1-title").textContent = translations[l].s1Title;
-  document.getElementById("service1-text").textContent = translations[l].s1Text;
-  document.getElementById("service2-title").textContent = translations[l].s2Title;
-  document.getElementById("service2-text").textContent = translations[l].s2Text;
-  document.getElementById("service3-title").textContent = translations[l].s3Title;
-  document.getElementById("service3-text").textContent = translations[l].s3Text;
-  document.getElementById("about-title").textContent = translations[l].aboutTitle;
-  document.getElementById("about-text").textContent = translations[l].aboutText;
-  document.getElementById("contact-title").textContent = translations[l].contactTitle;
-  document.getElementById("footer-text").textContent = translations[l].footer;
-
-  document.getElementById("lang-toggle").textContent = l === "en" ? "AR" : "EN";
-}
-
-document.getElementById("lang-toggle").onclick = () => {
-  applyLang(lang === "en" ? "ar" : "en");
-};
-
-applyLang("en");
+  applyLang("en");
+});
 </script>
 
 </body>
