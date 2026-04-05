@@ -4,74 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pallasite Productions</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }
-    /* Optional: add subtle text shadow for readability on video */
-    .text-shadow {
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    }
+    .text-shadow { text-shadow: 0 2px 6px rgba(0,0,0,0.5); }
   </style>
 </head>
-
 <body class="bg-white text-gray-900 transition-all duration-300">
 
-<!-- HEADER -->
 <header class="bg-gray-900 text-white">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <!-- Logo + Title + Toggle -->
     <div class="flex items-center gap-4">
       <img src="logo.png" alt="Logo" class="h-20 w-20">
-
       <div>
         <h1 id="title" class="text-2xl font-bold">Pallasite Productions</h1>
-
-        <button id="lang-toggle"
-          class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-semibold hover:bg-gray-200">
-          AR
-        </button>
+        <button id="lang-toggle" class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-semibold hover:bg-gray-200">AR</button>
       </div>
     </div>
-
-    <!-- NAV -->
-    <nav class="hidden md:flex gap-6 text-sm">
+    <nav id="nav-menu" class="hidden md:flex gap-6 text-sm">
       <a id="nav-home" href="#home">Home</a>
       <a id="nav-services" href="#services">Services</a>
       <a id="nav-about" href="#about">About</a>
       <a id="nav-contact" href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
-<!-- HERO with Video -->
 <section id="home" class="h-[90vh] relative flex items-center justify-center text-center text-white overflow-hidden">
-  <!-- Video Background -->
   <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
     <source src="promo.mp4" type="video/mp4">
   </video>
-
-  <!-- Content -->
   <div class="relative z-10 px-6">
-    <h2 id="hero-title" class="text-5xl font-black mb-4 text-shadow">
-      Production & Design Forged Like a Meteor
-    </h2>
-    <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6 text-shadow">
-      We craft cinematic visuals, branding, and digital experiences.
-    </p>
-    <a id="hero-btn"
-       href="#contact"
-       class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-      Start a Project
-    </a>
+    <h2 id="hero-title" class="text-5xl font-black mb-4 text-shadow">Production & Design Forged Like a Meteor</h2>
+    <p id="hero-text" class="text-xl max-w-2xl mx-auto mb-6 text-shadow">We craft cinematic visuals, branding, and digital experiences.</p>
+    <a id="hero-btn" href="#contact" class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Start a Project</a>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services" class="py-20 bg-gray-100 text-center">
   <h3 id="services-title" class="text-3xl font-bold mb-10">Our Services</h3>
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
@@ -90,26 +59,20 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="py-20 text-center">
   <h3 id="about-title" class="text-3xl font-bold mb-4">About Us</h3>
-  <p id="about-text" class="max-w-3xl mx-auto text-gray-600">
-    Inspired by rare pallasite meteorites, we merge creativity with precision.
-  </p>
+  <p id="about-text" class="max-w-3xl mx-auto text-gray-600">Inspired by rare pallasite meteorites, we merge creativity with precision.</p>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="bg-gray-900 text-white py-20 text-center">
   <h3 id="contact-title" class="text-3xl font-bold mb-6">Contact Us</h3>
   <a href="mailto:hello@pallasiteproductions.com" class="underline">hello@pallasiteproductions.com</a>
 </section>
 
-<!-- FOOTER -->
 <footer class="bg-gray-800 text-gray-400 text-center py-6">
   <p id="footer-text">© 2026 Pallasite Productions. All rights reserved.</p>
 </footer>
 
-<!-- LANGUAGE SCRIPT (UNICODE SAFE) -->
 <script>
 const translations = {
   en: {
