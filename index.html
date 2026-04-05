@@ -4,220 +4,179 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pallasite Productions</title>
-  <meta name="description" content="Pallasite Productions – Production & Design Company" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="font-sans bg-white text-gray-900 transition-all duration-300">
 
-<!-- Header -->
+<!-- HEADER -->
 <header class="bg-gray-900 text-white">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-    <!-- Logo + Title + Language Toggle -->
-    <div class="flex flex-col rtl:items-end items-start">
-      <div class="flex items-center space-x-4 rtl:space-x-reverse">
-        <img src="logo.png" alt="Pallasite Productions Logo" class="h-24 w-24" />
-        <div class="flex flex-col">
-          <h1 class="text-2xl font-bold mb-1"
-              data-en="PALLASITE PRODUCTIONS"
-              data-ar="ÈÇáÇÓÇíÊ ááÅäÊÇÌ">
-            PALLASITE PRODUCTIONS
-          </h1>
+    <!-- Logo + Title + Toggle -->
+    <div class="flex items-center gap-4">
+      <img src="logo.png" alt="Pallasite Logo" class="h-20 w-20" />
 
-          <button id="lang-toggle"
-            class="bg-white text-gray-900 px-3 py-1 rounded text-sm font-medium hover:bg-gray-200 flex items-center space-x-2 rtl:space-x-reverse w-max">
-            <span class="lang-en font-semibold">EN</span>
-            <span>/</span>
-            <span class="lang-ar text-gray-500">ÚÑÈí</span>
-          </button>
-        </div>
+      <div>
+        <h1 class="text-2xl font-bold"
+            data-en="Pallasite Productions"
+            data-ar="ÈÇáÇÓÇíÊ ááÅäÊÇÌ">
+          Pallasite Productions
+        </h1>
+
+        <button id="lang-toggle"
+          class="mt-1 bg-white text-gray-900 px-3 py-1 rounded text-sm font-medium hover:bg-gray-200">
+          <span id="lang-label">AR</span>
+        </button>
       </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="space-x-6 rtl:space-x-reverse hidden md:flex items-center">
-      <a href="#home" class="hover:text-gray-400" data-en="Home" data-ar="ÇáÑÆíÓíÉ">Home</a>
-      <a href="#about" class="hover:text-gray-400" data-en="About" data-ar="ãä äÍä">About</a>
-      <a href="#services" class="hover:text-gray-400" data-en="Services" data-ar="ÇáÎÏãÇÊ">Services</a>
-      <a href="#contact" class="hover:text-gray-400" data-en="Contact" data-ar="ÊæÇÕá">Contact</a>
+    <!-- NAV -->
+    <nav class="hidden md:flex gap-6">
+      <a href="#home" data-en="Home" data-ar="ÇáÑÆíÓíÉ">Home</a>
+      <a href="#services" data-en="Services" data-ar="ÎÏãÇÊäÇ">Services</a>
+      <a href="#about" data-en="About" data-ar="ãä äÍä">About</a>
+      <a href="#contact" data-en="Contact" data-ar="ÊæÇÕá ãÚäÇ">Contact</a>
     </nav>
 
   </div>
 </header>
 
-<!-- Hero -->
-<section id="home"
-  class="bg-[url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97')] bg-cover bg-center h-[90vh] flex items-center">
-  <div class="bg-black bg-opacity-70 w-full h-full flex items-center justify-center text-center text-white px-6">
-    <div>
-      <h2 class="text-5xl font-bold mb-4"
-          data-en="Production & Design Forged Like a Meteor"
-          data-ar="ÅäÊÇÌ æÊÕãíã ÈÞæÉ ÇáäíÒß">
-        Production & Design Forged Like a Meteor
-      </h2>
+<!-- HERO -->
+<section id="home" class="bg-black text-white h-[85vh] flex items-center justify-center text-center px-6">
+  <div>
+    <h2 class="text-5xl font-bold mb-4"
+        data-en="Production & Design Forged Like a Meteor"
+        data-ar="ÅäÊÇÌ æÊÕãíã ÕíÛ ßäíÒß">
+      Production & Design Forged Like a Meteor
+    </h2>
 
-      <p class="text-xl mb-6"
-         data-en="We craft cinematic visuals, branding, and digital experiences."
-         data-ar="äÕäÚ ÊÌÇÑÈ ÈÕÑíÉ ÓíäãÇÆíÉ æåæíÉ ÅÈÏÇÚíÉ æÊÌÇÑÈ ÑÞãíÉ.">
-        We craft cinematic visuals, branding, and digital experiences.
-      </p>
-
-      <a href="#services"
-         class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition inline-block"
-         data-en="Explore Our Work"
-         data-ar="ÇÓÊßÔÝ ÃÚãÇáäÇ">
-        Explore Our Work
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-4"
-        data-en="About Pallasite"
-        data-ar="ãä äÍä">
-      About Pallasite
-    </h3>
-
-    <p class="max-w-3xl mx-auto text-lg text-gray-700"
-       data-en="Inspired by rare pallasite meteorites, we blend raw creativity with refined execution to bring bold ideas to life."
-       data-ar="ãÓÊæÍæä ãä äíÇÒß ÇáÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ Èíä ÇáÅÈÏÇÚ ÇáÎÇã æÇáÊäÝíÐ ÇáÏÞíÞ áÊÍæíá ÇáÃÝßÇÑ ÇáÌÑíÆÉ Åáì æÇÞÚ.">
-      Inspired by rare pallasite meteorites, we blend raw creativity with refined execution.
+    <p class="text-xl mb-6 max-w-2xl mx-auto"
+       data-en="We craft cinematic visuals, branding, and digital experiences."
+       data-ar="äÕäÚ ãÍÊæì ÈÕÑí ÓíäãÇÆí¡ æåæíÉ¡ æÊÌÇÑÈ ÑÞãíÉ.">
+      We craft cinematic visuals, branding, and digital experiences.
     </p>
+
+    <a href="#contact"
+       class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200"
+       data-en="Start a Project"
+       data-ar="ÇÈÏÃ ãÔÑæÚß">
+      Start a Project
+    </a>
   </div>
 </section>
 
-<!-- Services -->
-<section id="services" class="py-20">
-  <div class="container mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-10"
-        data-en="Our Services"
-        data-ar="ÎÏãÇÊäÇ">
-      Our Services
-    </h3>
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-gray-100 text-center">
+  <h3 class="text-3xl font-bold mb-10"
+      data-en="Our Services"
+      data-ar="ÎÏãÇÊäÇ">
+    Our Services
+  </h3>
 
-    <div class="grid md:grid-cols-3 gap-10">
-      <div class="bg-white p-6 shadow-lg rounded-xl">
-        <h4 class="text-xl font-semibold mb-4"
-            data-en="Video Production"
-            data-ar="ÇáÅäÊÇÌ ÇáãÑÆí">
-          Video Production
-        </h4>
-        <p class="text-gray-600"
-           data-en="Commercials, documentaries, social media, and cinematic storytelling."
-           data-ar="ÅÚáÇäÇÊ¡ ÃÝáÇã æËÇÆÞíÉ¡ ãÍÊæì ÑÞãí¡ æÓÑÏ ÈÕÑí ÓíäãÇÆí.">
-          Commercials, documentaries, social media, and cinematic storytelling.
-        </p>
-      </div>
+  <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h4 class="font-semibold text-xl mb-2"
+          data-en="Video Production"
+          data-ar="ÇáÅäÊÇÌ ÇáãÑÆí">
+        Video Production
+      </h4>
+      <p data-en="Commercials, films, and digital storytelling."
+         data-ar="ÅÚáÇäÇÊ¡ ÃÝáÇã¡ æÓÑÏ ÈÕÑí ÑÞãí.">
+        Commercials, films, and digital storytelling.
+      </p>
+    </div>
 
-      <div class="bg-white p-6 shadow-lg rounded-xl">
-        <h4 class="text-xl font-semibold mb-4"
-            data-en="Creative Direction"
-            data-ar="ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí">
-          Creative Direction
-        </h4>
-        <p class="text-gray-600"
-           data-en="Concept development, visual language, and brand identity."
-           data-ar="ÊØæíÑ ÇáÃÝßÇÑ¡ ÇááÛÉ ÇáÈÕÑíÉ¡ æÈäÇÁ ÇáåæíÉ.">
-          Concept development, visual language, and brand identity.
-        </p>
-      </div>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h4 class="font-semibold text-xl mb-2"
+          data-en="Creative Direction"
+          data-ar="ÇáÅÎÑÇÌ ÇáÅÈÏÇÚí">
+        Creative Direction
+      </h4>
+      <p data-en="Concepts, visual identity, and branding."
+         data-ar="ãÝÇåíã¡ åæíÉ ÈÕÑíÉ¡ æÚáÇãÇÊ ÊÌÇÑíÉ.">
+        Concepts, visual identity, and branding.
+      </p>
+    </div>
 
-      <div class="bg-white p-6 shadow-lg rounded-xl">
-        <h4 class="text-xl font-semibold mb-4"
-            data-en="Design & Motion"
-            data-ar="ÇáÊÕãíã æÇáãæÔä">
-          Design & Motion
-        </h4>
-        <p class="text-gray-600"
-           data-en="Graphic design, motion graphics, and digital experiences."
-           data-ar="ÊÕãíã ÌÑÇÝíß¡ ãæÔä ÌÑÇÝíß¡ æÊÌÇÑÈ ÑÞãíÉ.">
-          Graphic design, motion graphics, and digital experiences.
-        </p>
-      </div>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <h4 class="font-semibold text-xl mb-2"
+          data-en="Design & Motion"
+          data-ar="ÇáÊÕãíã æÇáãæÔä">
+        Design & Motion
+      </h4>
+      <p data-en="Graphic and motion design for modern brands."
+         data-ar="ÊÕãíã ÌÑÇÝíß æãæÔä ááÚáÇãÇÊ ÇáÍÏíËÉ.">
+        Graphic and motion design for modern brands.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="bg-gray-900 text-white py-16">
-  <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-10"
-        data-en="Get in Touch"
-        data-ar="ÊæÇÕá ãÚäÇ">
-      Get in Touch
-    </h3>
-
-    <form class="max-w-2xl mx-auto space-y-6">
-      <input type="text"
-             class="w-full p-3 rounded text-black"
-             placeholder="Your Name"
-             data-placeholder-en="Your Name"
-             data-placeholder-ar="ÇÓãß" />
-
-      <input type="email"
-             class="w-full p-3 rounded text-black"
-             placeholder="Your Email"
-             data-placeholder-en="Your Email"
-             data-placeholder-ar="ÈÑíÏß ÇáÅáßÊÑæäí" />
-
-      <textarea rows="5"
-                class="w-full p-3 rounded text-black"
-                placeholder="Your Message"
-                data-placeholder-en="Your Message"
-                data-placeholder-ar="ÑÓÇáÊß"></textarea>
-
-      <button class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
-              data-en="Send Message"
-              data-ar="ÃÑÓá ÇáÑÓÇáÉ">
-        Send Message
-      </button>
-    </form>
-
-    <p class="text-center mt-6">hello@pallasiteproductions.com</p>
-  </div>
+<!-- ABOUT -->
+<section id="about" class="py-20 text-center">
+  <h3 class="text-3xl font-bold mb-4"
+      data-en="About Us"
+      data-ar="ãä äÍä">
+    About Us
+  </h3>
+  <p class="max-w-3xl mx-auto text-gray-600"
+     data-en="Inspired by rare pallasite meteorites, we blend raw creativity with precision."
+     data-ar="ãÓÊæÍæä ãä äíÇÒß ÈÇáÇÓÇíÊ ÇáäÇÏÑÉ¡ äãÒÌ ÇáÅÈÏÇÚ ÇáÎÇã ãÚ ÇáÏÞÉ.">
+    Inspired by rare pallasite meteorites, we blend raw creativity with precision.
+  </p>
 </section>
 
-<!-- Footer -->
+<!-- CONTACT -->
+<section id="contact" class="bg-gray-900 text-white py-20 text-center">
+  <h3 class="text-3xl font-bold mb-6"
+      data-en="Contact Us"
+      data-ar="ÊæÇÕá ãÚäÇ">
+    Contact Us
+  </h3>
+
+  <p class="mb-4"
+     data-en="Email us at:"
+     data-ar="ÑÇÓáäÇ Úáì:">
+    Email us at:
+  </p>
+
+  <a href="mailto:hello@pallasiteproductions.com"
+     class="underline">
+    hello@pallasiteproductions.com
+  </a>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-gray-800 text-gray-400 text-center py-6">
-  <p data-en="© 2025 Pallasite Productions. All rights reserved."
-     data-ar="© 2025 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ.">
-    © 2025 Pallasite Productions. All rights reserved.
+  <p data-en="© 2026 Pallasite Productions. All rights reserved."
+     data-ar="© 2026 ÈÇáÇÓÇíÊ ááÅäÊÇÌ. ÌãíÚ ÇáÍÞæÞ ãÍÝæÙÉ.">
+    © 2026 Pallasite Productions. All rights reserved.
   </p>
 </footer>
 
-<!-- Language Toggle Script -->
+<!-- LANGUAGE SCRIPT (FIXED) -->
 <script>
-  const toggle = document.getElementById('lang-toggle');
-  let currentLang = 'en';
+  const toggle = document.getElementById("lang-toggle");
+  const label = document.getElementById("lang-label");
+  let lang = "en";
 
-  function updateLanguage(lang) {
+  function setLanguage(newLang) {
+    lang = newLang;
     document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    label.textContent = lang === "en" ? "AR" : "EN";
 
-    document.querySelector('.lang-en').classList.toggle('font-semibold', lang === 'en');
-    document.querySelector('.lang-en').classList.toggle('text-gray-500', lang !== 'en');
-    document.querySelector('.lang-ar').classList.toggle('font-semibold', lang === 'ar');
-    document.querySelector('.lang-ar').classList.toggle('text-gray-500', lang !== 'ar');
-
-    document.querySelectorAll('[data-en]').forEach(el => {
+    document.querySelectorAll("[data-en]").forEach(el => {
       el.textContent = el.getAttribute(`data-${lang}`);
-    });
-
-    document.querySelectorAll('[data-placeholder-en]').forEach(el => {
-      el.placeholder = el.getAttribute(`data-placeholder-${lang}`);
     });
   }
 
-  toggle.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'ar' : 'en';
-    updateLanguage(currentLang);
+  toggle.addEventListener("click", () => {
+    setLanguage(lang === "en" ? "ar" : "en");
   });
 
-  updateLanguage(currentLang);
+  setLanguage("en");
 </script>
 
 </body>
